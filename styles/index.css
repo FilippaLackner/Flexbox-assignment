@@ -137,7 +137,7 @@
     font-size: 12px;
     line-height: 14px;
     text-align:center;
-
+    /*format and center text*/
 
 }
 
@@ -157,7 +157,7 @@
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    /*cemter text? */
+    /*format and center text */
     
 }
 .sixth-block {
@@ -201,16 +201,29 @@
     margin-right: 20px;
     margin-left: 146px;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+    
 
 
 }
 .second-block-circles {
-    width: 273px;
+    max-width: 273px;
     height: 220px;
     margin-top: 120px;
+    margin-bottom: 20px;
     background: #6A040F;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    align-items: baseline;
+    /*look at margins*/
+    
+    
+
 
 }
 .third-block-circles {
@@ -221,6 +234,8 @@
     background: #03071E;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 .fourth-block-circles {
@@ -228,9 +243,12 @@
     height: 220px;
     margin-left: 146px;
     margin-top: 20px;
+    margin-bottom: 120px ;
     background: #6A040F;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
@@ -242,4 +260,20 @@
     background: #03071E;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    ;
+    
+}
+
+.circles {
+    width: 50px;
+    height: 50px;
+    left: calc(50% - 50px/2 - 385px);
+    top: calc(50% - 50px/2 - 185px);
+    background: #748CAB;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    margin: 20px; 
 }
